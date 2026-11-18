@@ -1,0 +1,148 @@
+{
+  "views": {
+    "front": {
+      "width": 1122,
+      "height": 1402,
+      "idMap": "/assets/muscle-map/front/id_map.png",
+      "baseSteel": "/assets/muscle-map/front/base_steel.webp",
+      "bodyColor": "/assets/muscle-map/front/body_color.webp",
+      "muscles": {
+        "chest": {
+          "id": 1,
+          "name": "Chest",
+          "view": "front",
+          "pixelCount": 38502,
+          "mask": "/assets/muscle-map/front/masks/chest.webp",
+          "bbox": {
+            "minX": 413,
+            "minY": 187,
+            "maxX": 711,
+            "maxY": 420,
+            "width": 298,
+            "height": 233
+          }
+        },
+        "shoulders": {
+          "id": 2,
+          "name": "Shoulders",
+          "view": "front",
+          "pixelCount": 13264,
+          "mask": "/assets/muscle-map/front/masks/shoulders.webp",
+          "bbox": {
+            "minX": 367,
+            "minY": 236,
+            "maxX": 756,
+            "maxY": 370,
+            "width": 389,
+            "height": 134
+          }
+        },
+        "biceps": {
+          "id": 3,
+          "name": "Biceps",
+          "view": "front",
+          "pixelCount": 19851,
+          "mask": "/assets/muscle-map/front/masks/biceps.webp",
+          "bbox": {
+            "minX": 356,
+            "minY": 326,
+            "maxX": 767,
+            "maxY": 487,
+            "width": 411,
+            "height": 161
+          }
+        },
+        "forearms": {
+          "id": 4,
+          "name": "Forearms",
+          "view": "front",
+          "pixelCount": 37622,
+          "mask": "/assets/muscle-map/front/masks/forearms.webp",
+          "bbox": {
+            "minX": 249,
+            "minY": 412,
+            "maxX": 871,
+            "maxY": 766,
+            "width": 622,
+            "height": 354
+          }
+        },
+        "abs": {
+          "id": 5,
+          "name": "Abs",
+          "view": "front",
+          "pixelCount": 26384,
+          "mask": "/assets/muscle-map/front/masks/abs.webp",
+          "bbox": {
+            "minX": 500,
+            "minY": 368,
+            "maxX": 623,
+            "maxY": 649,
+            "width": 123,
+            "height": 281
+          }
+        },
+        "obliques": {
+          "id": 6,
+          "name": "Obliques",
+          "view": "front",
+          "pixelCount": 14953,
+          "mask": "/assets/muscle-map/front/masks/obliques.webp",
+          "bbox": {
+            "minX": 450,
+            "minY": 406,
+            "maxX": 672,
+            "maxY": 593,
+            "width": 222,
+            "height": 187
+          }
+        },
+        "quads": {
+          "id": 7,
+          "name": "Quads",
+          "view": "front",
+          "pixelCount": 77104,
+          "mask": "/assets/muscle-map/front/masks/quads.webp",
+          "bbox": {
+            "minX": 417,
+            "minY": 548,
+            "maxX": 706,
+            "maxY": 933,
+            "width": 289,
+            "height": 385
+          }
+        },
+        "calves": {
+          "id": 8,
+          "name": "Calves",
+          "view": "front",
+          "pixelCount": 60443,
+          "mask": "/assets/muscle-map/front/masks/calves.webp",
+          "bbox": {
+            "minX": 394,
+            "minY": 641,
+            "maxX": 728,
+            "maxY": 1356,
+            "width": 334,
+            "height": 715
+          }
+        },
+        "traps": {
+          "id": 9,
+          "name": "Traps",
+          "view": "front",
+          "pixelCount": 23351,
+          "mask": "/assets/muscle-map/front/masks/traps.webp",
+          "bbox": {
+            "minX": 442,
+            "minY": 15,
+            "maxX": 681,
+            "maxY": 251,
+            "width": 239,
+            "height": 236
+          }
+        }
+      }
+    }
+  }
+}
