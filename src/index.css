@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #121318;
+    color: #e3e1e9;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior-y: none;
+  }
+
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+/* Material Symbols & Icon sizing alignment */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0e13;
+}
+::-webkit-scrollbar-thumb {
+  background: #292a2f;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff544c;
+}
+
+/* Glowing utilities */
+.glow-primary {
+  box-shadow: 0 0 20px -4px rgba(255, 84, 76, 0.4);
+}
+.glow-secondary {
+  box-shadow: 0 0 20px -4px rgba(76, 215, 246, 0.3);
+}
+.glow-tertiary {
+  box-shadow: 0 0 20px -4px rgba(78, 222, 163, 0.3);
+}
+
+/* Glassmorphism Tier 1 & 2 */
+.glass-tier-1 {
+  background: rgba(26, 27, 33, 0.7);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.glass-tier-2 {
+  background: rgba(30, 31, 37, 0.85);
+  backdrop-filter: blur(32px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* ========================================================================= */
+/* INDUSTRIAL GYM SHUTTER STYLES & TEXTURES                                  */
+/* ========================================================================= */
+
+.shutter-slat {
+  position: relative;
+  width: 100%;
+  height: 38px;
+  background: linear-gradient(
+    180deg,
+    #1d1f27 0%,
+    #2a2c37 20%,
+    #191b22 45%,
+    #0d0e13 85%,
+    #08090c 100%
+  );
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.95);
+  box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.05), inset 0 -2px 3px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  user-select: none;
+}
+
+.shutter-slat::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.03) 100%);
+  pointer-events: none;
+}
+
+.slat-rivet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #56596b 0%, #16171d 80%);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.8), inset 0 1px 1px rgba(255,255,255,0.4);
+  z-index: 2;
+}
+
+.knurled-handle-bar {
+  background: linear-gradient(180deg, #22242e 0%, #15161c 50%, #0a0b0e 100%);
+  border-top: 2px solid #ff2a2e;
+  border-bottom: 5px solid #000;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.9), 0 -2px 16px rgba(255,42,46,0.25);
+}
+
+.knurl-pattern {
+  background-image: radial-gradient(#3a3e4d 15%, transparent 20%), radial-gradient(#101115 15%, transparent 20%);
+  background-position: 0 0, 4px 4px;
+  background-size: 8px 8px;
+}
+
+.shutter-stencil-text {
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #ffffff 0%, #d1d5db 60%, #9ca3af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 28px rgba(255, 42, 46, 0.45));
+}
+
+.shutter-stencil-accent {
+  background: linear-gradient(180deg, #ff474b 0%, #ff2a2e 50%, #c41216 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(255, 42, 46, 0.8));
+}
+
+.hazard-stripe {
+  background: repeating-linear-gradient(
+    -45deg,
+    #171922,
+    #171922 14px,
+    #ff2a2e 14px,
+    #ff2a2e 22px
+  );
+  opacity: 0.85;
+}
+
+.hazard-stripe-mobile {
+  background: repeating-linear-gradient(
+    -45deg,
+    #ff544c,
+    #ff544c 8px,
+    #121318 8px,
+    #121318 16px
+  );
+  opacity: 0.9;
+}
+
+.shutter-light-flare {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background: linear-gradient(to top, rgba(255, 42, 46, 0.7), transparent);
+  pointer-events: none;
+}
+
+
